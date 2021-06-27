@@ -14,12 +14,26 @@ A library to validate SEO tags for html payloads.
 
 ## Usage
 ```
+//Function for html payload validation.
 const validator = require('seo-tags-validator');
-validator(htmlBody,theTagstoValidate);   
+validator(htmlBody,tagstoValidate);   
 ```
+
 The `validator` function accepts two arguments:
 1. The html payload to be validated.
 2. The tags to be validated as an array. If empty validates the html payload against all the rules.
+
+
+```
+//Function for html file validation.
+const validatorFs = require('seo-tags-validator');
+validatorFs(htmlFilePath,tagsToValidate);
+
+```
+The `validatorFs` function accepts two arguments:
+1. The html file path to be validated.
+2. The tags to be validated as an array. If empty validates the html payload against all the rules.
+
 
 ## Example
 ```

@@ -23,12 +23,10 @@ The `validator` function accepts two arguments:
 1. The html payload to be validated.
 2. The tags to be validated as an array. If empty validates the html payload against all the rules.
 
-
 ```
 //Function for html file validation.
 const validatorFs = require('seo-tags-validator');
 validatorFs(htmlFilePath,tagsToValidate);
-
 ```
 The `validatorFs` function accepts two arguments:
 1. The html file path to be validated.
@@ -40,6 +38,7 @@ The `validatorFs` function accepts two arguments:
 const validator = require('seo-tags-validator');
 validator(`<html><head><meta name="description" content=""/></head><body><img /></body></html>`);
 ```
+
 ### Output: 
 ```
 WARNING : No <title> tag(s)

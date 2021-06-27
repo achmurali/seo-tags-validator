@@ -1,6 +1,6 @@
 {
   "name": "seo-tags-validator",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A library to validate SEO tags with customisation",
   "main": "index.js",
   "scripts": {
